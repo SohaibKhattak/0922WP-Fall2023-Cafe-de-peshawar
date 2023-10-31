@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$black: #000;
+$L_black: #191919;
+$white: #fff;
+$grey: grey;
+$font: 'Poppins', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+@mixin logo {
+    color: #636666;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@mixin P_style {
+    color: #929292;
+    font-size: 12.5px;
+}
+
+section{
+    padding: 80px 0px;
+
+    h3 {
+        font-size: 35px;
+
+    }
+
+    p {
+        @include P_style();
+    }
+}
+
+section.top_header{
+    background-color: $L_black;
+    color: $white;
+    height: 40px;
+    font-size: 14px;
+
+    .socials{
+        i{
+            margin: 0px 2px;
+            cursor: pointer;
+        }
+    }
+
+    .contact{
+        .number_wrapper{
+            padding-right: 20px;
+        }
+
+        *{
+            letter-spacing: 0.5px;
+        }
+        
+    }
+}
+
+
+section#nav {
+    height: 70px;
+    background: $white;
+    box-shadow: 0px 1px 10px 0px #00000073;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999999;
+
+    .container{
+
+        .lgo_wrp{
+            a{
+                @include logo()         
+            }
+        }
+
+        button.navbar-toggler {
+            font-size: 15px;
+        }
+        
+        button:focus {
+            outline: none !important;
+        }
+
+        li.nav-item {
+            font-size: 13px;
+
+            a.nav-link {
+                color: $black!important;
+                font-weight: 600;
+            }
+    
+            a.sign_btn{
+                color: $grey !important;
+                border: 1px solid $grey;
+                border-radius: 25px;
+                padding: 0px;
+                height: 28px;
+                width: 85px;
+                line-height: 24px;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+
+    }
+}
+
+section.info_overview{
+    background-color: $black;
+    text-align: center;
+    padding-bottom: 30px;
+
+    h3{
+        color: $white;
+    }
+    p.h_bottom_p{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        color: $white !important;
+    }
+
+    img{
+        padding-bottom: 11%;
+    }
+
+    .get_email_wrapper{
+        height: 40px;
+
+        input{
+            outline: none;
+            padding: 5px 20px;
+            border-radius: 25px;
+            border: 2.5px solid $grey;
+
+            &::placeholder{
+                font-size: 14px;
+                color: #999999;
+            }
+        }
+
+        button{
+            height: 98%;
+            position: absolute;
+            right: 0px;
+            width: 100px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: $grey;
+            outline: none;
+            border: none;
+            color: $white;
+            font-weight: 300;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+    }
+
+    p.rules{
+        padding-top: 10px;
+        color: $white;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+    }
+}
+
+.About_cafe{
+    background-color: $L_black;
+}
+
+.About_cafe_awards{
+    background-color: $black;
+}
+
+.Menu_Title{
+    background-color: $L_black;
+}
+
+  /* contact section  */
+
+ .contact{
+    background-color: $black;
+ }
+
+h1 {
+    text-align: center;
+}
+.name-custom{
+    color: #fff;
+}
+
+.contact-form {
+    padding: 20px;
+    border: 1px solid $L_black;
+    background-color: #191919;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+
+    
+}
+
+
+.form-group {
+    margin-top: 20px;
+}
+
+.btn-custom {
+    background-color: brown; /* Change this color to your desired color */
+    color: white;
+    border: none;
+}
+
+.label-custom {
+    color: brown; /* Change this color to your desired label color */
+}
+
+
+  
+  .Contact_cafe_info{
+    background-color:$L_black ;
+  }
+  .bottom_foot{
+    background-color: #929292;
+  }
+
+
+
+
